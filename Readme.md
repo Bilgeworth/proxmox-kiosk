@@ -15,7 +15,7 @@ curl -fsSL https://raw.githubusercontent.com/bilgeworth/proxmox-kiosk/main/insta
 If you want to avoid the lid policy or tty2 console:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOURUSER/REPO/main/install.sh | bash -s -- --url https://127.0.0.1:8006 --no-lid --no-tty2
+curl -fsSL https://raw.githubusercontent.com/ilgeworth/proxmox-kiosk/main/install.sh | bash -s -- --url https://127.0.0.1:8006 --no-lid --no-tty2
 ```
 
 If you want to inspect the script first:
