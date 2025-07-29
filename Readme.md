@@ -54,6 +54,12 @@ curl -fsSL https://raw.githubusercontent.com/bilgeworth/proxmox-kiosk/main/unins
 * If your USB‑C dock uses **DisplayLink**, install the DisplayLink driver on the *host*; containers/VMs aren’t needed for this setup.
 * Certificates: using `127.0.0.1` will prompt for the self‑signed cert. For fewer warnings, set `--url` to your node’s FQDN and install a proper cert in Proxmox.
 
+# quick troubleshooting
+
+`kioskctl status`
+`kioskctl doctor`
+`kioskctl restart`
+
 ## Altered files
 
 > These are **not** used by the installer (it writes the same contents), but are included in the repo for clarity.
