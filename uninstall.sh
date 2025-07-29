@@ -23,7 +23,7 @@ rm -f /etc/systemd/logind.conf.d/lid.conf || true
 systemctl restart systemd-logind || true
 
 echo "[4/5] Remove kiosk artifacts…"
-rm -f /usr/local/bin/kiosk-browser.sh || true
+rm -f /usr/local/bin/kiosk-browser.sh /usr/local/bin/kioskctl || true
 rm -rf "/home/${KIOSK_USER}/.config/sway" "/home/${KIOSK_USER}/.profile" || true
 
 if [[ "${REMOVE_USER}" == "yes" ]]; then
